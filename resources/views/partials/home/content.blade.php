@@ -6,7 +6,7 @@
 </div>
 {{-- End Jumbotron --}}
 
-{{-- Jumbotron --}}
+{{-- Activity Section --}}
 <section class="sec1 py-5">
   <div class="container">
     <div class="row">
@@ -35,7 +35,7 @@
     </div>
   </div>
 </section>
-{{-- End Jumbotron --}}
+{{-- End Activity Section --}}
 
 {{-- Social Media Section --}}
 <section class="sec2 py-5 text-center">

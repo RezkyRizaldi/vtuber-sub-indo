@@ -31,6 +31,11 @@
   @include('layouts.header')
   @show
 
+  @section('jumbotron')
+  @parent
+  @include('layouts.jumbotron')
+  @show
+
   @yield('content')
 
   @section('footer')

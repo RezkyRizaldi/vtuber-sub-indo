@@ -101,6 +101,18 @@ body {
     font-weight: 400;
 }
 
+.jumbotron .breadcrumb-item {
+    font-size: 24px
+}
+
+.jumbotron .breadcrumb-item a {
+    color: #fff;
+}
+
+.jumbotron .breadcrumb-item.active {
+    color: #00daff;
+}
+
 
 /* Section 1 */
 
