@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(OpenSans-Bold.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #00daff;
+    max-height: 100vh;
+}
+
+
+/* Navbar */
+
+.navbar {
+    /* position: relative; */
+    z-index: 1000;
+    transition: all .5s;
+}
+
+.navbar.change {
+    background: #00daff;
+}
+
+.navbar.change .navbar-brand img {
+    filter: none;
+    width: 120px;
+}
+
+.navbar.change .nav-item .nav-link {
+    margin-top: 12px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:hover .nav-link {
+    color: #00daff;
+}
+
+.navbar .navbar-brand img {
+    filter: invert(1);
+    width: 200px;
+    transition: .5s;
+    cursor: default;
+}
+
+.form-inline button {
+    display: none;
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+    position: relative;
+    background-image: url('../img/bg-jumbtron.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    margin-top: -85px;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 100;
+}
+
+.jumbotron .display-4 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+}
+
+.jumbotron .display-4 span {
+    color: #00daff;
+    font-weight: 400;
+}
+
+
+/* Section 1 */
+
+.sec1 h2 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sec1 p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* Section 2 */
+
+.sec2 {
+    background: #fff;
+}
+
+.sec2 h2 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sec2 p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.sec2 .d-flex {
+    justify-content: space-around;
+}
+
+.sec2 .d-flex a img {
+    transition: all .3s;
+}
+
+.sec2 .d-flex a img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Responsive Breakpoints */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .form-inline button {
+        display: none;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* .navbar-collapse {
+        min-height: 600px;
+    } */
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .form-inline button {
+        display: initial;
+    }
+}
